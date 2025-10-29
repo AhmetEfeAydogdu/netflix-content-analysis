@@ -27,7 +27,6 @@ Educational Value: The project integrates data cleaning, visualization, statisti
 IMDb Movie Dataset (Kaggle): Contains film attributes such as title, year, genre, runtime, vote_average, popularity.
 
 Movie Soundtracks Dataset (Kaggle): Contains soundtrack attributes such as title, bpm, energy, mode, key, track_duration.
-After merging on title, preprocessing produced ~N observations with both film and soundtrack features. Numeric features were normalized to the 0-1 range.
 
 ### Analysis Plan
 
