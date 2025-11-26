@@ -17,7 +17,7 @@ How has the balance between Movies and TV Shows changed over the years on Netfli
 There is no meaningful difference in the number of Movies and TV Shows released over the years.
 
 **H₁ (Alternative Hypothesis):**  
-As years increase, Netflix releases more TV Shows compared to Movies.
+As years increase, Netflix releases more Movies compared to TV  Shows.
 
 This hypothesis will be examined using simple exploratory data analysis, yearly content counts, and trend-based comparisons.
 
