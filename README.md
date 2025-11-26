@@ -1,65 +1,55 @@
-# film-music-alignment
+# Film–Soundtrack Popularity Relationship Analysis
 
-### Project Overview
+This project looks at whether popular films also tend to have popular soundtrack tracks. Using publicly available Kaggle datasets for both movies and Spotify songs, the goal is to combine the two and see if there is a noticeable connection between a film’s popularity and the popularity of the music linked to it.
 
-This project examines the alignment between films and their original soundtracks by analyzing measurable attributes. It investigates how film-level features (genre, runtime, audience rating, popularity) correspond with musical characteristics of the associated soundtrack (tempo, energy, mode, key). The objective is to identify statistical relationships and build a predictive model to explore whether musical features can serve as indicators of film style and reception.
+---
 
-### Objectives
+## Problem Definition
 
-Combine publicly available film metadata and soundtrack datasets to form an integrated dataset of film-soundtrack pairs.
+Films and soundtrack tracks each have their own popularity metrics.  
+Here, the main question is:
 
-Conduct exploratory data analysis (EDA) and statistical tests to explore relationships between film attributes and corresponding musical features.
+**“Do films with higher popularity scores also have more popular soundtrack songs?”**
 
-Develop and evaluate a regression model to predict film audience rating using musical features and film metadata.
+To explore this, film metadata and Spotify track data are matched and compared.
 
-Provide insights on whether soundtrack properties reflect film style and performance, and discuss potential implications for film scoring.
+---
 
-### Dataset
+## Why This is Interesting
 
-IMDb Movie Dataset (Kaggle): Contains film attributes such as title, year, genre, runtime, vote_average, popularity.
+Soundtracks are a big part of a film’s identity. Some movies become memorable largely because of their music, while some songs gain popularity thanks to the film they appear in.
 
-Movie Soundtracks Dataset (Kaggle): Contains soundtrack attributes such as title, bpm, energy, mode, key, track_duration.
+Checking how film success and soundtrack success align together can give simple but meaningful insights into how the two areas influence each other.
 
-### Analysis Plan
+---
 
-Data Preprocessing & Feature Engineering: Clean merged dataset, remove duplicates/missing values, standardize numeric variables.
+## Methodology
 
-Exploratory Data Analysis: Visualize distributions and relationships—histograms of bpm, energy, vote_average; scatter plots bpm vs vote_average, energy vs popularity; boxplots of musical features by film genre.
+1. **Data Collection:**  
+   Film data is taken from Kaggle (TMDB-based datasets).  
+   Track data comes from large Spotify datasets on Kaggle.
 
-_**Statistical Testing:**_
+2. **Matching:**  
+   Films and related soundtrack tracks are paired using title-based matching.
 
-ANOVA test to evaluate whether soundtrack tempo (bpm) differs significantly across film genres.
+3. **Features:**  
+   - Film: popularity, release year, budget.  
+   - Tracks: popularity, tempo, energy, valence, etc.
 
-Two-sample t-test comparing soundtrack energy between popular (upper-30% popularity) and less popular films.
+4. **Analysis:**  
+   Basic correlation checks and regression models are used to see how strongly film popularity relates to soundtrack popularity.
 
-**_Machine Learning:_**
+---
 
-Linear Regression model: Predict vote_average from predictors [bpm, energy, runtime, popularity].
+## Expected Outcomes
 
-Evaluate using R² and RMSE.
+- A clearer view of whether film popularity aligns with soundtrack popularity.  
+- Simple visualizations showing the relationship between film features and music features.  
+- A combined dataset linking films with the tracks associated with them.
 
-### Expected Results
+---
 
-Correlation results indicating relationships between musical features and film ratings/popularity.
+## Notes
 
-Significant genre differences in soundtrack attributes based on ANOVA/t-test results.
-
-Regression model demonstrating to what extent musical and film metadata explain audience ratings (expectation: moderate R²).
-
-Visualizations to support findings (scatter plots, boxplots, correlation heatmap).
-
-### Conclusion
-
-By examining the quantitative alignment between film attributes and soundtrack features, this study aims to provide a rational and statistic-based insight into the role of music in film perception and reception.
-
-**_Tools & Technologies_**
-
-Python Libraries: pandas, numpy, matplotlib, scikit-learn, scipy
-
-Development Environment: Jupyter Notebook or Visual Studio Code
-
-**_References_**
-
-IMDb Movie Dataset — Kaggle.
-
-Movie Soundtracks Dataset — Kaggle.
+All data comes from open Kaggle datasets.  
+No video or audio files are used—only metadata.
