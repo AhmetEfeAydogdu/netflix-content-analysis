@@ -14,12 +14,6 @@ Develop and evaluate a regression model to predict film audience rating using mu
 
 Provide insights on whether soundtrack properties reflect film style and performance, and discuss potential implications for film scoring.
 
-### Motivation
-
-Analytical Relevance: Quantitative study of film-music interplay fills a gap in empirical research on soundtrack design.
-
-Practical Application: Understanding how musical properties correlate with film success could inform creative decisions in film production and scoring.
-
 ### Dataset
 
 IMDb Movie Dataset (Kaggle): Contains film attributes such as title, year, genre, runtime, vote_average, popularity.
@@ -56,7 +50,7 @@ Visualizations to support findings (scatter plots, boxplots, correlation heatmap
 
 ### Conclusion
 
-By examining the quantitative alignment between film attributes and soundtrack features, this study aims to provide empirical insight into the role of music in film perception and reception. While musical features alone may not fully explain audience ratings, they offer meaningful explanatory power and open pathways for further exploration in film-music analytics.
+By examining the quantitative alignment between film attributes and soundtrack features, this study aims to provide a rational and statistic-based insight into the role of music in film perception and reception.
 
 **_Tools & Technologies_**
 
