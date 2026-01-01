@@ -5,9 +5,9 @@ This project looks at how Netflix’s content library has changed over time, foc
 The main idea is to see whether Netflix has been adding more TV Shows compared to Movies as the years go by.
 
 The datasets used in this project comes from Kaggle and StatCrunch:  
-https://www.kaggle.com/datasets/shivamb/netflix-shows 
-https://www.statcrunch.com/app/index.html?dataid=2188684
-https://www.kaggle.com/datasets/thedevastator/netflix-imdb-scores
+- https://www.kaggle.com/datasets/shivamb/netflix-shows 
+- https://www.statcrunch.com/app/index.html?dataid=2188684
+- https://www.kaggle.com/datasets/thedevastator/netflix-imdb-scores
 
 ---
 
