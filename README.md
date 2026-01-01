@@ -35,7 +35,7 @@ This hypothesis will be examined using simple exploratory data analysis, yearly 
 ---
 
 ## How It Works
-The dataset includes information such as title type, release year, rating, country, duration, and genres.  
+The "netflix_titles" dataset includes information such as title type, release year, rating, country, duration, and genres.  
 The project begins by reading the dataset, cleaning the required columns, and separating Movies and TV Shows.
 
 The main steps include:
@@ -44,7 +44,14 @@ The main steps include:
 - Checking whether TV Shows have increased faster than Movies
 - Preparing cleaned variables for further analysis and testing
 
-No complex preprocessing is needed for this stage.
+---
+
+## Examining the Reasons Behind Observed Result
+According to observed results, this project aims to detect reasons behind the difference/no difference between movie and TV show
+counts using "netflix_imdb_Scores" and "movies_budget_revenue" datasets. Project focuses on three main factors:
+- User engagement and attention
+- Sustained attention and risk in TV show production
+- Economic considerations, ROI factor
 
 ---
 
