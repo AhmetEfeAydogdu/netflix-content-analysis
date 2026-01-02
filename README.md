@@ -8,6 +8,7 @@ The datasets used in this project comes from Kaggle and StatCrunch:
 - https://www.kaggle.com/datasets/shivamb/netflix-shows 
 - https://www.statcrunch.com/app/index.html?dataid=2188684
 - https://www.kaggle.com/datasets/thedevastator/netflix-imdb-scores
+- Machine Learning: https://www.kaggle.com/datasets/ggtejas/tmdb-imdb-merged-movies-dataset
 
 ---
 
@@ -55,8 +56,17 @@ counts using "netflix_imdb_Scores" and "movies_budget_revenue" datasets. Project
 
 ---
 
+## Machine Learning
+In the machine learning part, project uses a new dataset called "ml_movies_dataset". Using this dataset, project aims to predict movies'
+IMDB ratings using different features such as budget, TMDB ratings, budget, revenue, both IMDB and TMDB vote counts , runtime, and
+release year. Later on project compares different ML models according to their MAE, RMSE, AND R^2 values, and finds the best model.
+Finally, feature importance analysis is done on the best model.
+
+---
+
 ## Technologies Used
 - Python  
 - pandas  
 - matplotlib  
-- seaborn  
+- seaborn
+- scikit-learn
